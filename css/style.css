@@ -5,6 +5,7 @@
 2.navbar
 3.banner
 4.services
+5.about
 
 table of content */
 
@@ -71,7 +72,6 @@ ul li:hover a::after{
     visibility: visible;
 }
 .primary_header{
-    margin: 80px 0px 50px;
     text-align: center;
 }
 .primary_header h2{
@@ -85,6 +85,27 @@ ul li:hover a::after{
     font-size: 400;
     line-height: 25px;
     word-spacing: 76%;
+    margin-top: 20px;
+}
+.thumb{
+    position: relative;
+}
+.thumb::before{
+    inset: 0;
+    position: absolute;
+    inset: 0;
+    content: '';
+    background: rgba(0,0,0,0.7);
+    
+}
+.thumb .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+}
+.thumb .overlay img{
+    width: 263px;
 }
 /* common css */
 
@@ -227,16 +248,16 @@ ul li:hover a::after{
     z-index: 2;
 }
 .icon{
-    font-size: 60px;
+    font-size: 30px;
     color: var(--white);
     padding: 10px 20px;
     transition: var(--common-transition);
 }
 #left-icon{
-    left: 3%;
+    left: 1%;
 }
 #right-icon{
-    right: 3%;
+    right: 1%;
 }
 
 .slider-icon::after,
@@ -266,27 +287,38 @@ ul li:hover a::after{
 /* banner section css end */
 
 /* services section css start */
+#services{
+    margin-top: 80px;
+}
 #services .service_item_part {
-    margin-top: 100px ;
+    margin-top: 230px ;
     margin-bottom: 100px;
 }
-
-#services .service_item_part .service_item .service_item_thumb{
+#services .service_item_part .service_item{
+    position: relative;
+}
+#services .service_item_part .service_item .service_item_thumb {
     border: 1px solid var(--dark-white);
-    display: inline-block;
     padding: 15px;
     transform: rotate(45deg)translateX(-50%);
-    margin-left: 50%;
-    margin-bottom: 30px;
+    left: 45.5%;
+    transition: var(--common-transition);
+    position: absolute;
+    top: -52%;
+    width: 107px;
+    height: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #services .service_item_part .service_item .service_item_thumb img{
     transform: rotate(-45deg);
 }
 #services .service_item_part .service_item .service_item_content{
-    padding: 60px 70px;
+    padding: 60px 47px;
     text-align: center;
     border: 1px solid var(--light-black);
-    border-bottom: transparent;
+    transition: var(--common-transition);
     font-weight: 400;
 }
 #services .service_item_part .service_item .service_item_content h3{
@@ -299,4 +331,80 @@ ul li:hover a::after{
     font-size: 14px;
     color: var(--dark-gray);
 }
+#services .service_item_part .service_item::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 32px;
+    top:-14%;
+    left: 0;
+    transition: var(--common-transition);
+    border-right: 2px dashed var(--dark-gray);
+}
+#services .service_item_part .service_item:hover .service_item_thumb,
+#services .service_item_part .service_item:hover .service_item_content,
+#services .service_item_part .service_item:hover::before
+{
+    border-color: var(--light-yellow);
+}
+#services .service_item_part .service_item:hover .service_item_content{
+    box-shadow: 0px 0px 3px 0px #000;
+}
 /* services section css end */
+
+/* about section css start */
+
+#about .about_content_part{
+    width: 77%;
+}
+#about .about_content_part .primary_header{
+    text-align: left;
+}
+#about .about_content_part .primary_header h2{
+    margin-bottom: 15px;
+}
+#about .about_content{
+    width: 80%;
+}
+#about .about_content ul li{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--light-black);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#about .about_content .content_path_menu{
+    width: 100%;
+    height: 7px;
+    background: var(--light-gray);
+    margin-top: 10px;
+}
+#about .about_content .content_path_menu .content_path_slider{
+    height: 100%;
+    width: 20%;
+    background: var(--light-yellow);
+}
+#about .about_content .content{
+    margin-top: 20px;
+}
+#about .about_content p{
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: justify;
+}
+#about .about_content .content div p:nth-child(1){
+    margin-bottom: 15px;
+}
+.display-none{
+    display: none;
+}
+#about .about_content .content a{
+    font-size: 16px ;
+    font-weight: 500;
+    padding: 10px 15px;
+    background: var(--light-yellow);
+    color: var(--light-black);
+}
+/* about section css end */
