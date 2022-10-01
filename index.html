@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- main css  -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -63,28 +66,42 @@
     <nav id="navbar">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-2">
+                <div class="col-md-2">
                     <a href="#">
-                        <img class="imf-fluid" src="img/logo.png" alt="produstry">
+                        <img class="img-fluid" src="img/logo.png" alt="produstry">
                     </a>
                 </div>
-                <div class="col-lg-10">
-                    <div class="menu_bar d-flex align-items-center justify-content-end">
-                        <ul class="d-flex">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Our Blog</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <button>
-                                    <img src="img/navbar.png" alt="navbar">
-                                </button>
-                            </li>
-                        </ul>
+                <div class="col-md-10">
+                    <div class="d-flex justify-content-end">
+                        <div class="menu_bar d-flex align-items-center justify-content-end">
+                            <ul class="d-flex menu">
+                                <li><a class="active" href="#">Home</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Our Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="hide_everything"></div>
+                        <div class="handbar">
+                            <button class="show">
+                                <img src="img/navbar.png" alt="">
+                            </button>
+                            <div class="menu_bar_show">
+                                <div class="cancel">
+                                    <button class="hide"><i class="far fa-times-circle"></i></button>
+                                </div>
+                                <ul class="menu_show">
+                                    <li><a class="active" href="#">Home</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Our Blog</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,11 +207,8 @@
     <section id="about">
         <div class="d-flex">
             <div class="col-lg-5">
-                <div class="thumb">
-                    <img class="img-fluid" src="img/about02.jpg" alt="">
-                    <div class="overlay">
-                        <img class="img-fluid" src="img/about01.png" alt="">
-                    </div>
+                <div class="thumb" style="background: url(img/about02.jpg);">
+                    <img class="img-fluid" src="img/about01.png" alt="">
                 </div>
             </div>
             <div class="col-lg-7 d-flex justify-content-end">
@@ -215,7 +229,7 @@
                             <div class="content_path_slider"></div>
                         </div>
                         <div class="content">
-                            <div  class="company ">
+                            <div class="company ">
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsumas been the industry's standard dummy text ever since the 1500s, when an
                                     unknownprinter ook a galley of type and scrambled it to make a type specimen book.
@@ -228,7 +242,7 @@
                                 </p>
                                 <a href="#">Read More</a>
                             </div>
-                            <div  class="History  display-none">
+                            <div class="History  display-none">
                                 <p>history Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsumas been the industry's standard dummy text ever since the 1500s, when an
                                     unknownprinter ook a galley of type and scrambled it to make a type specimen book.
@@ -241,7 +255,7 @@
                                 </p>
                                 <a href="#">Read More</a>
                             </div>
-                            <div  class="mission display-none">
+                            <div class="mission display-none">
                                 <p>mission Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsumas been the industry's standard dummy text ever since the 1500s, when an
                                     unknownprinter ook a galley of type and scrambled it to make a type specimen book.
@@ -254,7 +268,7 @@
                                 </p>
                                 <a href="#">Read More</a>
                             </div>
-                            <div  class="awards  display-none">
+                            <div class="awards  display-none">
                                 <p>awards Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsumas been the industry's standard dummy text ever since the 1500s, when an
                                     unknownprinter ook a galley of type and scrambled it to make a type specimen book.
@@ -265,7 +279,7 @@
                                     Ipsumas been the industry's standard dummy text ever since the 1500s, when an
                                     unknownprinter ook a galley of type and scrambled it to make a type specimen book.
                                 </p>
-                                 <a href="#">Read More</a>
+                                <a href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -273,12 +287,658 @@
             </div>
         </div>
     </section>
-    <!-- // about    <!-- jquery link -->
+    <!-- // about   section css -->
+
+    <!-- portfolio section part start-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="primary_header">
+                <h2>Our Portfolio</h2>
+                <p>We provide you a better service. you have no complain about our<br> service, it’s guaranteed.</p>
+            </div>
+            <div class="portfolio_item_part">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="portfolio_item">
+                            <img class="img-fluid" src="img/portfolio01.jpg" alt="">
+                            <div class="overlay">
+                                <div class="title">
+                                    <h3>Architectural</h3>
+                                    <h4>Building/Architect</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="portfolio_item">
+                            <img class="img-fluid" src="img/portfolio02.jpg" alt="">
+                            <div class="overlay">
+                                <div class="title">
+                                    <h3>Architectural</h3>
+                                    <h4>Building/Architect</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="portfolio_item">
+                            <img class="img-fluid" src="img/portfolio03.jpg" alt="">
+                            <div class="overlay">
+                                <div class="title">
+                                    <h3>Architectural</h3>
+                                    <h4>Building/Architect</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="portfolio_item">
+                            <img class="img-fluid" src="img/portfolio04.jpg" alt="">
+                            <div class="overlay">
+                                <div class="title">
+                                    <h3>Architectural</h3>
+                                    <h4>Building/Architect</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // portfolio section part end-->
+
+    <!-- achievement section part start-->
+    <section id="achievement">
+        <div class="achievement_item_part">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="achievement_item">
+                            <span class="counter">222</span>
+                            <h5>Satisfied Client</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="achievement_item">
+                            <span class="counter">333</span>
+                            <h5>Total Employees</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="achievement_item">
+                            <span class="counter">444</span>
+                            <h5>Finished Project</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="achievement_item">
+                            <span class="counter">555</span>
+                            <h5>Happy Customer</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // achievement section part end-->
+
+    <!-- blog section part start-->
+    <section id="blog">
+        <div class="container">
+            <div class="primary_header">
+                <h2>Our Blog</h2>
+                <p>We provide you a better service. you have no complain about our <br> service, it’s guaranteed.</p>
+            </div>
+            <div class="blog_item_slider">
+                <div class="blog_item">
+                    <div class="blog_item_thumb">
+                        <img class="img-fluid" src="img/blog01.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog_item_content">
+                        <h4>Best Contructory Production Industry</h4>
+                        <div class="social_activites">
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    By: Admin
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    2.5k Likes
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    1.5k Comments
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the prining and typesetting industry. Lorem Ipsum has
+                            beene industry's standard dummy text ever since the 0s, when an unknown book.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_thumb">
+                        <img class="img-fluid" src="img/blog03.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog_item_content">
+                        <h4>Best Contructory Production Industry</h4>
+                        <div class="social_activites">
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    By: Admin
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    2.5k Likes
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    1.5k Comments
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the prining and typesetting industry. Lorem Ipsum has
+                            beene industry's standard dummy text ever since the 0s, when an unknown book.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_thumb">
+                        <img class="img-fluid" src="img/blog03.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog_item_content">
+                        <h4>Best Contructory Production Industry</h4>
+                        <div class="social_activites">
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    By: Admin
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    2.5k Likes
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    1.5k Comments
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the prining and typesetting industry. Lorem Ipsum has
+                            beene industry's standard dummy text ever since the 0s, when an unknown book.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_thumb">
+                        <img class="img-fluid" src="img/blog01.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog_item_content">
+                        <h4>Best Contructory Production Industry</h4>
+                        <div class="social_activites">
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    By: Admin
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    2.5k Likes
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    1.5k Comments
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the prining and typesetting industry. Lorem Ipsum has
+                            beene industry's standard dummy text ever since the 0s, when an unknown book.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_thumb">
+                        <img class="img-fluid" src="img/blog01.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog_item_content">
+                        <h4>Best Contructory Production Industry</h4>
+                        <div class="social_activites">
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    By: Admin
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    2.5k Likes
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    1.5k Comments
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the prining and typesetting industry. Lorem Ipsum has
+                            beene industry's standard dummy text ever since the 0s, when an unknown book.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_thumb">
+                        <img class="img-fluid" src="img/blog03.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog_item_content">
+                        <h4>Best Contructory Production Industry</h4>
+                        <div class="social_activites">
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    By: Admin
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    2.5k Likes
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    1.5k Comments
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the prining and typesetting industry. Lorem Ipsum has
+                            beene industry's standard dummy text ever since the 0s, when an unknown book.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_thumb">
+                        <img class="img-fluid" src="img/blog03.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog_item_content">
+                        <h4>Best Contructory Production Industry</h4>
+                        <div class="social_activites">
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    By: Admin
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    2.5k Likes
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    1.5k Comments
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the prining and typesetting industry. Lorem Ipsum has
+                            beene industry's standard dummy text ever since the 0s, when an unknown book.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="blog_item">
+                    <div class="blog_item_thumb">
+                        <img class="img-fluid" src="img/blog01.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog_item_content">
+                        <h4>Best Contructory Production Industry</h4>
+                        <div class="social_activites">
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    By: Admin
+                                </li>
+                                <li>
+                                    <i class="fas fa-thumbs-up"></i>
+                                    2.5k Likes
+                                </li>
+                                <li>
+                                    <i class="fas fa-comments"></i>
+                                    1.5k Comments
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the prining and typesetting industry. Lorem Ipsum has
+                            beene industry's standard dummy text ever since the 0s, when an unknown book.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // blog section part end-->
+
+
+    <!-- testimonial section part start-->
+    <section id="testimonial">
+        <div class="primary_header">
+            <h2>Our Testimonial</h2>
+            <p>We provide you a better service. you have no complain about our <br> service, it’s guaranteed.</p>
+        </div>
+        <div class="testimonial_info">
+            <div class="container">
+                <div class="testimonial_item_slider">
+                    <div class="testimonial_item">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                        <h3>Sofia Baura</h3>
+                        <h4>Architect</h4>
+                        <div class="ratings">
+                            <ul class="d-flex justify-content-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star-half"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="testimonial_item">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                        <h3>Samsul Arefin</h3>
+                        <h4>Architect</h4>
+                        <div class="ratings">
+                            <ul class="d-flex justify-content-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star-half"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="testimonial_item">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                        <h3>Jon Arefin</h3>
+                        <h4>Architect</h4>
+                        <div class="ratings">
+                            <ul class="d-flex justify-content-center">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star-half"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="employee_for_slide">
+                    <div class="employee_img">
+                        <img src="img/testimonial01.png" alt="">
+                    </div>
+                    <div class="employee_img">
+                        <img src="img/testimonial02.png" alt="">
+                    </div>
+                    <div class="employee_img">
+                        <img src="img/testimonial03.png" alt="">
+                    </div>
+                    <div class="employee_img">
+                        <img src="img/testimonial01.png" alt="">
+                    </div>
+                    <div class="employee_img">
+                        <img src="img/testimonial02.png" alt="">
+                    </div>
+                    <div class="employee_img">
+                        <img src="img/testimonial03.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // testimonial section part end-->
+
+    <!-- brand section part start-->
+    <section id="brand">
+        <div class="container">
+            <div class="brand_slider">
+                <div class="brand_item">
+                    <img class="img-fluid" src="img/brand01.png" alt="">
+                </div>
+                <div class="brand_item">
+                    <img class="img-fluid" src="img/brand02.png" alt="">
+                </div>
+                <div class="brand_item">
+                    <img class="img-fluid" src="img/brand03.png" alt="">
+                </div>
+                <div class="brand_item">
+                    <img class="img-fluid" src="img/brand04.png" alt="">
+                </div>
+                <div class="brand_item">
+                    <img class="img-fluid" src="img/brand05.png" alt="">
+                </div>
+                <div class="brand_item">
+                    <img class="img-fluid" src="img/brand01.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // brand section part end-->
+
+    <!-- footer section part start-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer01">
+                        <div class="footer_logo">
+                            <img class="img-fluid" src="img/footer_logo.png" alt="">
+                        </div>
+                        <div class="footer_content">
+                            <p>
+                                pLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br>
+                                Ipsum
+                                has been the industry's. <br><br>
+                                unknown printer took a galley of type and scrambled it to make a type.
+                            </p>
+                            <div class="social_cite col-lg-11">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a></li>
+                                    <li><a href="#" class="me-0">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer02">
+                        <div class="footer_header">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <div class="contact_part">
+                            <ul>
+                                <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    <div class="address">
+                                        <p>
+                                            1234, Park Street Avenue, NewYork City North America.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                        <i class="fas fa-phone-alt"></i>
+                                    <div class="phone">
+                                        <a href="callto:+8801234567890">(+880) 123 4567 890</a><br>
+                                        <a href="callto:+8800987654321">(+880) 098 7654 321</a>
+                                    </div>
+                                </li>
+                                <li>
+                                        <i class="fas fa-envelope"></i>
+                                    <div class="mail">
+                                        <a href="mailto:produstry.industry@gmail.com">produstry.industry@gmail.com</a>
+                                        <a href="mailto:industry.produstry@gmail.com">industry.produstry@gmail.com</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer03">
+                        <div class="footer_header">
+                            <h3>Important Links</h3>
+                        </div>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About US</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Our Blogs</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer04">
+                        <div class="footer_header">
+                            <h3>Latest News</h3>
+                        </div>
+                        <div class="news_part">
+                            <div class="news d-flex">
+                                <div class="news_thumb">
+                                    <img class="img-fluid" src="img/news01.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+                                    <h3>Nice Newest Construction Factory Work</h3>
+                                    <h4>26 October 2017</h4>
+                                    <div class="social_activites">
+                                        <ul class="d-flex justify-content-between">
+                                            <li>
+                                                <i class="fas fa-user"></i>
+                                                By: Admin
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-thumbs-up"></i>
+                                                2.5k Likes
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments"></i>
+                                                1.5k Comments
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news d-flex">
+                                <div class="news_thumb">
+                                    <img class="img-fluid" src="img/news02.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+                                    <h3>Nice Newest Construction Factory Work</h3>
+                                    <h4>26 October 2017</h4>
+                                    <div class="social_activites">
+                                        <ul class="d-flex justify-content-between">
+                                            <li>
+                                                <i class="fas fa-user"></i>
+                                                By: Admin
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-thumbs-up"></i>
+                                                2.5k Likes
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments"></i>
+                                                1.5k Comments
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // footer section part end-->
+
+    <!-- copyright section part start-->
+    <section id="copyright">
+      <div class="container">
+        <div class="row text-center">
+            <p>
+                copyright <i class="far fa-copyright"></i>
+                 2017. All right reserved by <span>PRODUSTRY</span>
+            </p>
+        </div>
+      </div>  
+    </section>
+    <!-- // copyright section part end-->
+
+    <!-- jquery link -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- bootstrap js link -->
     <script src="js/bootstrap.min.js"></script>
     <!-- slick js link -->
     <script src="js/slick.min.js"></script>
+    <!-- waypoin js link -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- counterup js link -->
+    <script src="js/jquery.counterup.min.js"></script>
     <!-- main js link -->
     <script src="js/app.js"></script>
 </body>
