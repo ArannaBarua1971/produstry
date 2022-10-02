@@ -5,4 +5,36 @@
     #navbar .handbar{
         display: block;
     }
+    #navbar .menu_bar .nav_btn{
+        display: none;
+    }
+    #navbar .container{
+        position: relative;
+    }
+    #navbar .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: inline-block;
+        transition: var(--common-transition);
+        transform: translate(-50%,-45%);
+    }
+}
+@media (min-width:992px) {
+    #navbar .container{
+        position: relative;
+    }
+    #navbar .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: inline-block;
+        transition: var(--common-transition);
+        transform: translate(-50%,-45%);
+    }
+    #navbar .logo.left_side{
+        transform: translate(0%,-45%);
+        top: 50%;
+        left: 0;
+    }
 }

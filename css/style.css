@@ -1,6 +1,7 @@
 
 /* table of content 
 
+--> home page table
 1.header
 2.navbar
 3.banner
@@ -11,6 +12,14 @@
 8.blog
 9.testimonial
 10.brand
+11.footer
+12.copyright
+
+--> About US page table
+1.header
+2.navbar
+3.navigationStatus
+
 
 table of content */
 
@@ -97,6 +106,23 @@ ul li:hover a::after{
     word-spacing: 76%;
     margin-top: 20px;
 }
+.secondary_header h2{
+    font-weight: 400;
+    font-size: 35px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.secondary_header p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.secondary_header p i{
+    font-size: 15px;
+}
+.secondary_header p span{
+    color: var(--light-yellow);
+}
 .thumb{
     position: relative;
     z-index: 1;
@@ -160,6 +186,8 @@ ul li:hover a::after{
 
 /* common css */
 
+/* <------------------ HOME PAGE CSS START -------------------> */
+
 /* header section css start */
 #header{
     background: var(--light-yellow);
@@ -196,6 +224,10 @@ ul li:hover a::after{
 /* navbar section css start */
 #navbar{
     padding: 20px 0px;
+    height: 101px;
+}
+#navbar .menu_bar{
+    transform: translateY(23%);
 }
 #navbar .menu_bar ul li a{
     font-size: 16px;
@@ -225,6 +257,22 @@ ul li:hover a::after{
 {
     color: var(--light-yellow);
 }
+#navbar .menu_bar .menu{
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--common-transition);
+}
+#navbar .menu_bar .menu.showHide{
+    opacity: 1;
+    visibility: visible;
+}
+#navbar .menu_bar .nav_btn{
+    color: var(--light-yellow);
+    background: none;
+    background: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
 #navbar .handbar{
     display: none;
     position: relative;
@@ -234,6 +282,9 @@ ul li:hover a::after{
     background: none;
     padding: 4px;
     border-radius: 5px;
+}
+#navbar .handbar .show{
+    transform: translateY(23%);
 }
 #navbar .handbar button img{
     margin-top: -9px;
@@ -284,7 +335,7 @@ ul li:hover a::after{
     width: 60%;
     height: 65%;
 }
-#navbar .handbar .menu_bar_show .menu_show li a.active{
+#navbar ul li a.active{
     color: var(--light-yellow);
 }
 #navbar .handbar .menu_bar_show .menu_show li a.active::after,
@@ -841,6 +892,12 @@ ul li:hover a::after{
     background: var(--light-black);
     padding: 60px 0px;
 }
+#footer  ul li a::after,
+#footer  ul li a::before
+{   content: '';
+    border: none;
+    display: none;
+}
 #footer .footer01 .footer_content p{
     font-weight: 400;
     font-size: 14px;
@@ -902,6 +959,7 @@ ul li:hover a::after{
     margin-bottom: 7.5px;
     transition: var(--common-transition);
 }
+
 #footer .footer03 ul li a:hover{
     color: var(--light-yellow);
 }
@@ -949,4 +1007,36 @@ ul li:hover a::after{
     color: var(--light-yellow);
 }
 /* copyright section css end */
+
+/* <------------------ HOME PAGE CSS END -------------------> */
+
+/* <------------------ ABOUT US PAGE CSS START -------------------> */
+
+/* navigationStatus section css start*/
+#navigationStatus{
+    background: url(../img/aboutUs_01.jpg);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#navigationStatus::before{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    content: '';
+    z-index: -1;
+}
+#navigationStatus .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navigationStatus section css end*/
+
+/* <------------------ ABOUT US PAGE CSS END -------------------> */
 
