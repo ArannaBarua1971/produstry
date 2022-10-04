@@ -19,6 +19,15 @@
         transition: var(--common-transition);
         transform: translate(-50%,-45%);
     }
+    #navbar .hide_everything{
+        background: rgba(0,0,0,0.7);
+        position: fixed;
+        width: 0%;
+        top: 0;
+        height: 100%;
+        left: 0;
+        z-index: 98;
+    }
 }
 @media (min-width:992px) {
     #navbar .container{
@@ -36,5 +45,8 @@
         transform: translate(0%,-45%);
         top: 50%;
         left: 0;
+    }
+    #navbar .hide_everything{
+        display: none;
     }
 }
