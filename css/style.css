@@ -19,12 +19,28 @@
 1.header
 2.navbar
 3.navigationStatus
+4.aboutPodustry
+5.ourMission
+6.team
+7.footer
+8.copyright
 
+--> Portfolio
+1.header
+2.navbar
+3.navigationStatus
+4.portfolio
+5.team
+6.footer
+7.copyright
 
 table of content */
 
 
 /*Bootstrap common css */
+*{
+    font-family: var(--roboto);;
+}
 h1,h2,h3,h4,h5,h6,
 small,span,
 ul,ol,
@@ -54,6 +70,9 @@ font-family: var(--roboto);
     --dark-white:#575757;
     --milk:#f1f1f1;
     --dark-blue:#0077b5;
+    --dark-pink:#ff5f83;
+    --light-red:#ff3d3d;
+    --white-gray:#c4c4c4;
 }
 img{
     max-width:100%;
@@ -234,6 +253,12 @@ img{
 #navbar .handbar .menu_bar_show .menu_show li a:hover::before{
     border-color: var(--light-yellow);
 }
+#navbar ul li a.active{
+    color: var(--light-yellow);
+}
+#navbar .handbar .menu_bar_show .menu_show li a.active{
+    color: var(--light-yellow);
+}
 #navbar .handbar .menu_bar_show .menu_show li a:hover{
     color: var(--light-yellow);
 }
@@ -241,9 +266,7 @@ img{
     width: 60%;
     height: 65%;
 }
-#navbar ul li a.active{
-    color: var(--light-yellow);
-}
+
 /* navbar section css end */
 
 /* banner section css start */
@@ -1016,7 +1039,7 @@ img{
 
 /* <------------------ ABOUT US PAGE CSS END -------------------> */
 
-/* <------------------ TEAM US PAGE CSS END -------------------> */
+/* <------------------ PORTFOLIO PAGE CSS END -------------------> */
 
 /* in_port section css start */
 #portfolio.in_port{
@@ -1028,12 +1051,314 @@ img{
     background: var(--light-yellow);
     display: inline-block;
     position: relative;
+    font-size: 16px;
     left: 50%;
     transform: translateX(-50%);
+    text-transform: uppercase;
 }
 /* in_port section css end */
 
-/* <------------------ TEAM US PAGE CSS END -------------------> */
+/* <------------------ PORTFOLIO PAGE CSS END -------------------> */
+
+/* <------------------ BLOG PAGE CSS END -------------------> */
+
+/* blogMenu section css start */
+#blogMenu{
+    margin: 96px 0px 60px;
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: 14px;
+}
+#blogMenu .blog_menu_status .row{
+    border: 1px solid var(--light-gray);
+    padding: 10px 5px 10px 10px;
+}
+#blogMenu .blog_menu_status .menu_bar a{
+    color: var(--dark-gray);
+    border: 1px solid var(--dark-gray);
+    font-size: 22px;
+    padding: 5px 10px;
+    display: inline-block;
+    transition: var(--common-transition);
+}
+#blogMenu .blog_menu_status .menu_bar a:hover{
+    border: 1px solid var(--light-yellow);
+    background: var(--light-yellow);
+}
+#blogMenu .blog_menu_status p{
+    padding-right: 10px;
+}
+#blogMenu .blog_menu_status  select{
+    border: 1px solid var(--dark-gray);
+    padding: 12px 20px;
+    background: transparent;
+}
+#blogMenu .blog_menu_status  .pages_list ul li a{
+    color: var(--dark-gray);
+    border: 1px solid var(--dark-gray);
+    font-size: 14px;
+    padding: 13px 12px;
+    margin: 0px 5px;
+}
+#blogMenu .blog_menu_status  .pages_list ul li p{
+    padding-right: 0px;
+}
+/* blogMenu section css end */
+
+/* blogList section css start */
+#blogList .blog_item_part .blog_item .blog_item_thumb img{
+    width: 100%;
+}
+#blogList .blog_item_part .blog_item .blog_item_content{
+    width: 670px;
+    background: var(--milk);
+    padding: 110px 50px 50px;
+    z-index: 9;
+    margin: -160px 0px 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0 15%,100% 0, 100% 100%, 0 100%);
+}
+#blogList .blog_item_part .blog_item .blog_item_content h3{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--light-black);
+    margin-bottom: 10px;
+}
+#blogList .blog_item_part .blog_item .blog_item_content .social_activites ul li a{
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--dark-gray);
+    font-size: 13px;
+    border: none;
+    font-weight: 400;
+}
+#blogList .blog_item_part .blog_item .blog_item_content p{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-gray);
+    line-height: 25px;
+    margin: 30px 0px ;
+}
+#blogList .blog_item_part .blog_item .blog_item_content a.button{
+    display: inline-block;
+    font-size: 16px;
+    color: #353535;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--light-black);
+    padding: 10px 15px;
+    transition: var(--common-transition);
+}
+#blogList .blog_item_part .blog_item .blog_item_content a.button:hover{
+    background: var(--light-yellow);
+    border: 1px solid var(--light-yellow);
+}
+#blogList .next_blog_btn{
+    text-align: center;
+    border: 1px solid var(--light-black);
+    margin-bottom: 70px;
+}
+#blogList .next_blog_btn a{
+    color: var(--light-black);
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+}
+#blogList .sidebar .search_keyword input{
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 6px;
+    margin-bottom: 60px;
+}
+#blogList .sidebar .sidebar_news .sidebar_news_menu ul li{
+    margin-right: 24px;
+    cursor: pointer;
+}
+#blogList .sidebar .sidebar_news .sidebar_news_menu ul li.active{
+    color: var(--light-yellow);
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item{
+    margin: 30px 0px;
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .news_item:nth-child(2n){
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_thumb{
+    position: relative;
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_thumb .overlay{
+    position: absolute;
+    inset: 0;
+    background:rgba(255, 202, 54,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--common-transition);
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_thumb a{
+    color: var(--dark-pink);
+    background: var(--white);
+    padding: 5px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--common-transition);
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item:hover .populer_news_item_thumb .overlay,#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item:hover .populer_news_item_thumb a{
+    opacity: 1;
+    visibility: visible;
+}
+
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_content{
+    margin-left: 30px;
+    width: 55%;
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_content p{
+    font-weight: 500;
+    color: var(--light-black);
+    font-size: 14px;
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item:hover .populer_news_item_content p{
+    color: var(--light-yellow);
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_content .social_activites ul{
+    width: 100%;
+    margin-top: 34px;
+}
+#blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_content .social_activites ul li a{
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--dark-gray);
+    margin-right: 16px;
+}
+#blogList .sidebar .sidebar_categories h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--light-black);
+    text-transform: uppercase;
+}
+#blogList .sidebar .sidebar_categories ul{
+    margin: 30px 0px 50px;
+}
+#blogList .sidebar .sidebar_categories ul li{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-gray);
+    transition: 0.3s linear;
+}
+#blogList .sidebar .sidebar_categories ul li:hover{
+    color: var(--light-yellow);
+}
+#blogList .sidebar .sidebar_tags h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--light-black);
+    text-transform: uppercase;
+}
+#blogList .sidebar .sidebar_tags .tags{
+    margin: 30px 0px 50px;
+}
+#blogList .sidebar .sidebar_tags a{
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-gray);
+    transition: 0.3s linear;
+    display: inline-block;
+    border: 1px solid #222;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+#blogList .sidebar .sidebar_tags a:hover{
+    border: 1px solid var(--light-yellow);
+    color: var(--light-yellow);
+}
+#blogList .sidebar .sidebar_blog_video{
+    position: relative;
+}
+#blogList .sidebar .sidebar_blog_video .overlay{
+    inset: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#blogList .sidebar .sidebar_blog_video .overlay i{
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:inline-block;
+    text-align: center;
+    line-height: 50px;
+    background: var(--light-red);
+}
+/* blogList section css end */
+
+
+
+/* <------------------ BLOG PAGE CSS END -------------------> */
+/* <------------------ cotactUs PAGE CSS start -------------------> */
+
+/* contactInfo section css start */
+#contactInfo{
+    margin: 100px 0px 50px;
+}
+#contactInfo .info{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light-black);
+}
+#contactInfo .info .icon{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: var(--light-yellow);
+}
+#contactInfo .info p{
+    padding: 30px 40px;
+}
+#contactInfo .info p.bord{
+    border-left: 1px solid var(--white-gray);
+    border-right: 1px solid var(--white-gray);
+}
+/* contactInfo section css end */
+
+/* map section css start */
+#map .maping_status{
+    position: relative;
+    margin-bottom: 100px;
+}
+#map .maping_status .overlay{
+    content: '';
+    inset: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#map .maping_status .overlay i{
+    color: var(--light-yellow);
+    font-size: 30px;
+}
+/* map section css end */
+
+/* <------------------ cotactUs PAGE CSS END -------------------> */
+
 
 
 

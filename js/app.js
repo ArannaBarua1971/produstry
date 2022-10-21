@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('.handbar .show').on('click', function () {
         $('.menu_bar_show').animate({ right: '0px' })
         $('.hide_everything').animate({ width: '100%' })
+        $('#navbar .menu_show ul li a.active').css({color:'var(#ffca36;)'})
     })
     $('.handbar .hide').on('click', function () {
         $('.hide_everything').animate({ width: '0%' })
@@ -88,6 +89,8 @@ $(document).ready(function () {
         centerPadding:'0px',
         autoplay:true,
     })
+
+    
 })
 // --> about section js
 function show(v1, v2, v3, v4) {
@@ -95,6 +98,12 @@ function show(v1, v2, v3, v4) {
     $(v2).addClass('display-none')
     $(v3).addClass('display-none')
     $(v4).addClass('display-none')
+}
+// --> blog sidebar news
+function news(v1, v2, v3) {
+    $(v1).addClass('active')
+    $(v2).removeClass('active')
+    $(v3).removeClass('active')
 }
 
 
