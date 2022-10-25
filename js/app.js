@@ -1,6 +1,29 @@
-// jquery link
 $(document).ready(function () {
 
+    $(window).scroll(function(){
+        var scrollPosition=$(window).scrollTop();
+
+    // scroll top
+    if(scrollPosition >300){
+        $('#navbar').addClass('fixed');
+        $('#scrolltop').removeClass('display_none');
+    }
+    else{
+          $('#navbar').removeClass('fixed');
+        $('#scrolltop').addClass('display_none');
+      }
+    })
+    $('#scrolltop .top_arrow_btn').on('click',function(){
+        $('html,body').animate({
+            scrollTop: '0'
+        },500)
+    })
+    
+
+    // preloader js
+    $(window).on('load',function(){
+        $('#preloader').fadeOut(500);
+    })
     // navbar js 
     $('.handbar .show').on('click', function () {
         $('.menu_bar_show').animate({ right: '0px' })
@@ -105,5 +128,6 @@ function news(v1, v2, v3) {
     $(v2).removeClass('active')
     $(v3).removeClass('active')
 }
-
+// venobox activator
+new VenoBox();
 
