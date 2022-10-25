@@ -72,7 +72,7 @@ $(document).ready(function () {
         arrows: false,
         centerMode: true,
         centerPadding: '0px',
-        autoplay: false,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 992,
