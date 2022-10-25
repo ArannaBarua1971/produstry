@@ -1,34 +1,34 @@
 $(document).ready(function () {
 
-    $(window).scroll(function(){
-        var scrollPosition=$(window).scrollTop();
+    $(window).scroll(function () {
+        var scrollPosition = $(window).scrollTop();
 
-    // scroll top
-    if(scrollPosition >300){
-        $('#navbar').addClass('fixed');
-        $('#scrolltop').removeClass('display_none');
-    }
-    else{
-          $('#navbar').removeClass('fixed');
-        $('#scrolltop').addClass('display_none');
-      }
+        // scroll top
+        if (scrollPosition > 300) {
+            $('#navbar').addClass('fixed');
+            $('#scrolltop').removeClass('display_none');
+        }
+        else {
+            $('#navbar').removeClass('fixed');
+            $('#scrolltop').addClass('display_none');
+        }
     })
-    $('#scrolltop .top_arrow_btn').on('click',function(){
+    $('#scrolltop .top_arrow_btn').on('click', function () {
         $('html,body').animate({
             scrollTop: '0'
-        },500)
+        }, 500)
     })
-    
+
 
     // preloader js
-    $(window).on('load',function(){
+    $(window).on('load', function () {
         $('#preloader').fadeOut(500);
     })
     // navbar js 
     $('.handbar .show').on('click', function () {
         $('.menu_bar_show').animate({ right: '0px' })
         $('.hide_everything').animate({ width: '100%' })
-        $('#navbar .menu_show ul li a.active').css({color:'var(#ffca36;)'})
+        $('#navbar .menu_show ul li a.active').css({ color: 'var(#ffca36;)' })
     })
     $('.handbar .hide').on('click', function () {
         $('.hide_everything').animate({ width: '0%' })
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     // --> for banner slider
     $('.slider').slick({
-        arrows:false,
+        arrows: false,
         autoplay: true,
     })
 
@@ -72,7 +72,23 @@ $(document).ready(function () {
         arrows: false,
         centerMode: true,
         centerPadding: '0px',
-        autoplay:true,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '100px',
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '0px',
+                }
+            }
+        ]
     })
 
 
@@ -89,8 +105,16 @@ $(document).ready(function () {
         asNavFor: '.testimonial_item_slider',
         centerMode: true,
         focusOnSelect: true,
-        arrows:false,
-        centerPadding:'0px',
+        arrows: false,
+        centerPadding: '0px',
+        responsive:[
+            {
+                breakpoint:992,
+                settings:{
+                    slidesToShow: 3,
+                }
+            }
+        ]
     });
 
 
@@ -102,18 +126,40 @@ $(document).ready(function () {
         centerMode: true,
         centerPadding: '0px',
         arrows: false,
+        responsive:[
+            {
+                breakpoint:992,
+                settings:{
+                    slidesToShow:3,
+                }
+            },
+            {
+                breakpoint:768,
+                settings:{
+                    slidesToShow:1,
+                    centerPadding:'70px',
+                }
+            },
+            {
+                breakpoint:576,
+                settings:{
+                    slidesToShow:1,
+                    centerPadding:'26px',
+                }
+            }
+        ]
     })
 
     //  --> team slider
     $('.team_slider').slick({
-        slidesToShow:3,
-        arrows:false,
-        centerMode:true,
-        centerPadding:'0px',
-        autoplay:true,
+        slidesToShow: 3,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        autoplay: true,
     })
 
-    
+
 })
 // --> about section js
 function show(v1, v2, v3, v4) {
