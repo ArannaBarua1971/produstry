@@ -376,7 +376,7 @@ img {
     visibility: hidden;
 }
 #navbar .menu_bar .menu li:hover a::before,
-#navbar .menu_bar .menu li:hover a::after
+#navbar .menu_bar .menu li:hover a::after,
 #navbar .menu_bar .menu li:hover::before,
 #navbar .menu_bar .menu li:hover::after{
     background: var(--light-yellow);
