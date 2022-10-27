@@ -39,14 +39,14 @@
     <section id="header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-3 d-flex align-items-center top_header_left">
+                <div class="col-lg-3 col-md-4 col-sm-12 d-flex  justify-content-centeralign-items-center justify-content-center top_header_left">
                     <i class="fas fa-map-marker-alt"></i>
                     <p>1234, Park Street, New York, America</p>
                 </div>
-                <div class="col-lg-6 top_header_middle d-flex justify-content-center">
+                <div class="col-lg-6 col-md-4 col-sm-12 top_header_middle d-flex justify-content-center">
                     <p>Welcome to PRODUSTRY</p>
                 </div>
-                <div class="col-lg-3 top_header_right">
+                <div class="col-lg-3 col-md-4 col-sm-12 top_header_right d-flex justify-content-center">
                     <ul class="d-flex justify-content-end">
                         <li><a href="#">
                                 <i class="fab fa-facebook-f"></i>
@@ -70,13 +70,12 @@
     </section>
     <!-- // header  section part end-->
 
-
     <!-- navbar section part start-->
     <nav id="navbar">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-2">
-                    <a class="logo" href="../index.html">
+                    <a class="logo"  href="index.html">
                         <img class="img-fluid" src="../img/logo.png" alt="produstry">
                     </a>
                 </div>
@@ -84,11 +83,11 @@
                     <div class="d-flex justify-content-end">
                         <div class="menu_bar d-flex align-items-center justify-content-end">
                             <ul class="d-flex menu">
-                                <li><a href="../index.html">Home</a></li>
+                                <li class="ac"><a class="../active" href="index.html">Home</a></li>
                                 <li><a href="#">Services</a></li>
                                 <li><a href="../aboutUS.html">About Us</a></li>
                                 <li><a href="../portfolio.html">Portfolio</a></li>
-                                <li><a class="active" href="../blog.html">Our Blog</a></li>
+                                <li><a href="../blog.html">Our Blog</a></li>
                                 <li><a href="../contactUs.html">Contact Us</a></li>
                             </ul>
                             <ul>
@@ -98,18 +97,18 @@
                         <div class="hide_everything"></div>
                         <div class="handbar">
                             <button class="show">
-                                <img src="img/navbar.png" alt="">
+                                <img src="../img/navbar.png" alt="">
                             </button>
                             <div class="menu_bar_show">
                                 <div class="cancel">
                                     <button class="hide"><i class="far fa-times-circle"></i></button>
                                 </div>
                                 <ul class="menu_show">
-                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a class="active" href="../index.html">Home</a></li>
                                     <li><a href="#">Services</a></li>
                                     <li><a href="../aboutUS.html">About Us</a></li>
                                     <li><a href="../portfolio.html">Portfolio</a></li>
-                                    <li><a class="active" href="../blog.html">Our Blog</a></li>
+                                    <li><a href="../blog.html">Our Blog</a></li>
                                     <li><a href="../contactUs.html">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -126,7 +125,7 @@
         <div class="container">
             <div class="secondary_header">
                 <h2>Blog Details</h2>
-                <p>Home <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i> <span>Blog Details</span>
+                <p><a href="index.html">Home</a> <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i> <span>Blog Details</span>
                 </p>
             </div>
         </div>
@@ -137,14 +136,14 @@
     <section id="blogMenu">
         <div class="container">
             <div class="blog_menu_status">
-                <div class="row align-items-center">
-                    <div class="col-lg-4">
+                <div class="row align-items-center justify-content-center">
+                    <div class=" col-xl-4 col-lg-2 col-md-6 col-sm-12">
                         <div class="menu_bar">
                             <a href="#"><i class="fas fa-th"></i></a>
                             <a href="#"><i class="fas fa-list-ul"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex justify-content-evenly">
+                    <div class=" col-xl-4  col-lg-5 col-md-6 col-sm-12 d-flex justify-content-evenly">
                         <div class="sorting_part_of_blog d-flex  align-items-center">
                             <p>Sort by:</p>
                             <select name="" id="">
@@ -164,7 +163,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class=" col-xl-4 col-lg-5 col-sm-12">
                         <div class="pages_list d-flex align-items-center justify-content-end">
                             <p>Pages:</p>
                             <ul class="d-flex">
@@ -430,7 +429,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="sidebar_tags">
+                        <div class="sidebar_tags ">
                             <h2>tags</h2>
                             <div class="tags d-flex flex-wrap justify-contain-between">
                                 <a href="#">Industry</a>
@@ -455,148 +454,149 @@
     </section>
     <!-- // blogList section part end-->
 
- <!-- footer section part start-->
- <section id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="footer01">
-                    <div class="footer_logo">
-                        <img class="img-fluid" src="../img/footer_logo.png" alt="">
+    <!-- footer section part start-->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer01">
+                        <div class="footer_logo">
+                            <img class="img-fluid" src="img/footer_logo.png" alt="">
+                        </div>
+                        <div class="footer_content">
+                            <p>
+                                pLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br>
+                                Ipsum
+                                has been the industry's. <br><br>
+                                unknown printer took a galley of type and scrambled it to make a type.
+                            </p>
+                            <div class="social_cite col-lg-11">
+                                <ul class="d-flex justify-content-between">
+                                    <li><a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a></li>
+                                    <li><a href="#" class="me-0">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer_content">
-                        <p>
-                            pLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br>
-                            Ipsum
-                            has been the industry's. <br><br>
-                            unknown printer took a galley of type and scrambled it to make a type.
-                        </p>
-                        <div class="social_cite col-lg-11">
-                            <ul class="d-flex justify-content-between">
-                                <li><a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a></li>
-                                <li><a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a></li>
-                                <li><a href="#">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a></li>
-                                <li><a href="#">
-                                        <i class="fab fa-google-plus-g"></i>
-                                    </a></li>
-                                <li><a href="#" class="me-0">
-                                        <i class="fab fa-pinterest-p"></i>
-                                    </a></li>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer02">
+                        <div class="footer_header">
+                            <h3>Contact Us</h3>
+                        </div>
+                        <div class="contact_part">
+                            <ul>
+                                <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    <div class="address">
+                                        <p>
+                                            1234, Park Street Avenue, NewYork City North America.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                        <i class="fas fa-phone-alt"></i>
+                                    <div class="phone">
+                                        <a href="callto:+8801234567890">(+880) 123 4567 890</a><br>
+                                        <a href="callto:+8800987654321">(+880) 098 7654 321</a>
+                                    </div>
+                                </li>
+                                <li>
+                                        <i class="fas fa-envelope"></i>
+                                    <div class="mail">
+                                        <a href="mailto:produstry.industry@gmail.com">produstry.industry@gmail.com</a>
+                                        <a href="mailto:industry.produstry@gmail.com">industry.produstry@gmail.com</a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="footer02">
-                    <div class="footer_header">
-                        <h3>Contact Us</h3>
-                    </div>
-                    <div class="contact_part">
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="address">
-                                    <p>
-                                        1234, Park Street Avenue, NewYork City North America.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone-alt"></i>
-                                <div class="phone">
-                                    <a href="callto:+8801234567890">(+880) 123 4567 890</a><br>
-                                    <a href="callto:+8800987654321">(+880) 098 7654 321</a>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <div class="mail">
-                                    <a href="mailto:produstry.industry@gmail.com">produstry.industry@gmail.com</a>
-                                    <a href="mailto:industry.produstry@gmail.com">industry.produstry@gmail.com</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="footer03">
-                    <div class="footer_header">
-                        <h3>Important Links</h3>
-                    </div>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About US</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Testimonial</a></li>
-                            <li><a href="#">Our Blogs</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="footer04">
-                    <div class="footer_header">
-                        <h3>Latest News</h3>
-                    </div>
-                    <div class="news_part">
-                        <div class="news d-flex">
-                            <div class="news_thumb">
-                                <img class="img-fluid" src="../img/news01.jpg" alt="">
-                            </div>
-                            <div class="news_content">
-                                <h3>Nice Newest Construction Factory Work</h3>
-                                <h4>26 October 2017</h4>
-                                <div class="social_activites">
-                                    <ul class="d-flex justify-content-between">
-                                        <li>
-                                            <i class="fas fa-user"></i>
-                                            By: Admin
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-thumbs-up"></i>
-                                            2.5k Likes
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-comments"></i>
-                                            1.5k Comments
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer03">
+                        <div class="footer_header">
+                            <h3>Important Links</h3>
                         </div>
-                        <div class="news d-flex">
-                            <div class="news_thumb">
-                                <img class="img-fluid" src="../img/news02.jpg" alt="">
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About US</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Our Blogs</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer04">
+                        <div class="footer_header">
+                            <h3>Latest News</h3>
+                        </div>
+                        <div class="news_part">
+                            <div class="news d-flex">
+                                <div class="news_thumb">
+                                    <img class="img-fluid" src="../img/news01.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+                                    <h3>Nice Newest Construction Factory Work</h3>
+                                    <h4>26 October 2017</h4>
+                                    <div class="social_activites">
+                                        <ul class="d-flex justify-content-between">
+                                            <li>
+                                                <i class="fas fa-user"></i>
+                                                By: Admin
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-thumbs-up"></i>
+                                                2.5k Likes
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments"></i>
+                                                1.5k Comments
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="news_content">
-                                <h3>Nice Newest Construction Factory Work</h3>
-                                <h4>26 October 2017</h4>
-                                <div class="social_activites">
-                                    <ul class="d-flex justify-content-between">
-                                        <li>
-                                            <i class="fas fa-user"></i>
-                                            By: Admin
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-thumbs-up"></i>
-                                            2.5k Likes
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-comments"></i>
-                                            1.5k Comments
-                                        </li>
-                                    </ul>
+                            <div class="news d-flex">
+                                <div class="news_thumb">
+                                    <img class="img-fluid" src="../img/news02.jpg" alt="">
+                                </div>
+                                <div class="news_content">
+                                    <h3>Nice Newest Construction Factory Work</h3>
+                                    <h4>26 October 2017</h4>
+                                    <div class="social_activites">
+                                        <ul class="d-flex justify-content-between">
+                                            <li>
+                                                <i class="fas fa-user"></i>
+                                                By: Admin
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-thumbs-up"></i>
+                                                2.5k Likes
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-comments"></i>
+                                                1.5k Comments
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -604,9 +604,8 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- // footer section part end-->
+    </section>
+    <!-- // footer section part end-->
 
     <!-- copyright section part start-->
     <section id="copyright">

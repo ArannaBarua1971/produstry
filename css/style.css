@@ -1569,7 +1569,7 @@ img {
     width: 670px;
     background: var(--milk);
     padding: 110px 50px 50px;
-    z-index: 9;
+    z-index: 7;
     margin: -160px 0px 60px;
     position: relative;
     left: 50%;
