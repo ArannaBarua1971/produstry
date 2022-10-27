@@ -42,7 +42,8 @@ $(document).ready(function () {
 
     // --> for banner slider
     $('.slider').slick({
-        arrows: false,
+        prevArrow:'#banner .left_slider',
+        nextArrow:'#banner .right_slider',
         autoplay: true,
     })
 
@@ -69,7 +70,7 @@ $(document).ready(function () {
     // --> blog slider
     $('.blog_item_slider').slick({
         slidesToShow: 3,
-        arrows: false,
+        arrows:false,
         centerMode: true,
         centerPadding: '0px',
         autoplay: true,
@@ -96,8 +97,9 @@ $(document).ready(function () {
     $('.testimonial_item_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
-        asNavFor: '.employee_for_slide'
+        arrows:false,
+        asNavFor: '.employee_for_slide',
+        autoplay:true,
     });
     $('.employee_for_slide').slick({
         slidesToShow: 3,
@@ -105,7 +107,7 @@ $(document).ready(function () {
         asNavFor: '.testimonial_item_slider',
         centerMode: true,
         focusOnSelect: true,
-        arrows: false,
+        arrows:false,
         centerPadding: '0px',
         responsive:[
             {
@@ -125,7 +127,7 @@ $(document).ready(function () {
         autoplay: true,
         centerMode: true,
         centerPadding: '0px',
-        arrows: false,
+        arrows:false,
         responsive:[
             {
                 breakpoint:992,
@@ -156,7 +158,30 @@ $(document).ready(function () {
         arrows: false,
         centerMode: true,
         centerPadding: '0px',
-        autoplay: true,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '150px',
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '60px',
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '0px',
+                }
+            }
+        ]
     })
 
 
