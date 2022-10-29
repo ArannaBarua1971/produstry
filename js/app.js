@@ -164,7 +164,7 @@ $(document).ready(function () {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
-                    centerPadding: '150px',
+                    centerPadding: '170px',
                 }
             },
             {

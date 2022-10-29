@@ -62,6 +62,27 @@
     }
 }
 @media (min-width:992px) and (max-width:1199.98px) {
+    #ourMission .thumb img {
+        left: -12px;
+    }
+    #ourMission .thumb img {
+        height: 106.69%;
+    }
+    #aboutPodustry .thumb img {
+        height: 106.69%;
+    }
+    #ourMission .about_content h4 {
+        margin-bottom: 28px;
+    }
+    #ourMission .about_content ul {
+        margin-top: 31px;
+    }
+    #aboutPodustry .about_content h4 {
+        margin-bottom: 38px;
+    }
+    #aboutPodustry .about_content p {
+        margin: 15px 0px 0px;
+    }
    #blogList #mail form input{
         width: 47%;
     }
@@ -244,6 +265,18 @@
 }
 
 @media (min-width:768px) and (max-width:991.98px) {
+    #aboutPodustry .about_content, #ourMission .about_content {
+        padding: 20px 60px 37px;
+    }
+    #ourMission div{
+        flex-direction: column;
+    }
+    #aboutPodustry div{
+        flex-direction: column;
+    }
+    #aboutPodustry .about_content,#ourMission .about_content{
+        padding: 20px 60px 0px;
+    }
     #blogList #mail form input{
         width: 47%;
     }
@@ -380,6 +413,23 @@
 }
 
 @media (min-width:576px) and (max-width:767.98px) {
+    #ourMission .thumb {
+        margin-bottom: 7px;
+    }
+    #ourMission div{
+        flex-direction: column;
+    }
+    #aboutPodustry div{
+        flex-direction: column;
+    }
+   #ourMission .about_content{
+        padding: 0px 60px 32px;
+    }
+    #aboutPodustry .about_content{
+        padding: 20px 60px 92px;
+        border-bottom: 4px solid;
+
+    }
     #blogList #mail form input{
         width: 100%;
     }
@@ -537,6 +587,57 @@
 }
 
 @media (max-width:575.98px) {
+    #ourMission .about_content p {
+        font-size: 15px;
+    }
+    #aboutPodustry .about_content h4 {
+        margin-bottom: 32px;
+    }
+    #aboutPodustry .about_content p {
+        margin: 24px 0px 0px;
+        font-size: 14px;
+    }
+    #aboutPodustry .thumb {
+        width: 63%;
+        height: 306px;
+    }
+    #ourMission .thumb {
+        width: 63%;
+        margin-left: 37%;
+        height: 306px;
+    }
+    #ourMission .thumb img {
+        left: 11px;
+        height: 111.3%;
+    }
+    #aboutPodustry .thumb img {
+        height: 110%;
+        left: -54px;
+    }
+    #ourMission .about_content ul li {
+        margin: 10px 0px 15px 16px;
+        font-size: 14px;
+    }
+    #ourMission .about_content ul {
+        margin-top: 21px;
+    }
+    #ourMission .thumb {
+        margin-bottom: 7px;
+    }
+    #ourMission div{
+        flex-direction: column;
+    }
+    #aboutPodustry div{
+        flex-direction: column;
+    }
+   #ourMission .about_content{
+        padding: 0px 25px 32px;
+    }
+    #aboutPodustry .about_content{
+        padding: 20px 25px 92px;
+        border-bottom: 4px solid;
+
+    }
     #blogList #mail form input{
         width: 90%;
     }
@@ -603,11 +704,12 @@
     }
     /* common section css */
     .thumb img {
-        right: 120px;
+        right: 60px;
     }
 
     .thumb {
         height: 333px;
+        width: 63%;
     }
 
     #header .top_header_middle {
