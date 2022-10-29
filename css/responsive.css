@@ -62,6 +62,12 @@
     }
 }
 @media (min-width:992px) and (max-width:1199.98px) {
+    #blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_content .social_activites ul li a {
+        font-size: 10px;
+    }
+    #blogList .sidebar .sidebar_news .sidebar_news_item_part .popular_news_item .populer_news_item_content {
+        margin-left: 16px;
+    }
     #ourMission .thumb img {
         left: -12px;
     }
