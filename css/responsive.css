@@ -823,7 +823,7 @@
     }
 
     #blog .blog_item_slider .blog_item .blog_thumb {
-        transform: translateY(30%);
+        transform: translateY(28%);
     }
     #scrolltop .top_arrow_btn {
         bottom: 61px;
@@ -839,5 +839,11 @@
     }
     #blogList .sidebar .sidebar_blog_video{
         margin-bottom: 10px;
+    }
+    #blog .blog_item_slider .blog_item .blog_content a.button {
+        display: none;
+    }
+    #blog .blog_item_slider .blog_item.slick-center .blog_content a.button {
+        display: inline-block;
     }
 }
